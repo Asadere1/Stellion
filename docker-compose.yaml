@@ -1,0 +1,52 @@
+version: '3.8'
+
+x-aws-loadbalancer: $AWS_LOADBALANCER
+x-aws-vpc: $AWS_VPC
+
+services:
+  view:
+    image: $AWS_IMAGE
+    container_name: view
+    build: .
+    ports:
+      - target: 8838
+        x-aws-protocol: http
+        published: 8838
+
+x-aws-cloudformation:
+  Resources:
+    View8838TargetGroup:
+      Properties:
+        HealthCheckPath: /
+        Matcher:
+          HttpCode: 200-499
+    View8838Listener:
+      Type: 'AWS::ElasticLoadBalancingV2::Listener'
+      Properties:
+        Port: 8838
+        Protocol: "HTTPS"
+        Certificates:
+          - $AWS_CERTIFICATE_ARN
+        DefaultActions:
+        - ForwardConfig:
+            TargetGroups:
+            - TargetGroupArn:
+                Ref: View8838TargetGroup
+          Type: forward
+        LoadBalancerArn: $AWS_LOADBALANCER_ARN
+    ListenerRulesView:
+      Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
+      Properties:
+        Actions:
+          - Type: forward
+            ForwardConfig:
+              TargetGroups:
+                - TargetGroupArn:
+                    Ref: View8838TargetGroup
+                  Weight: 1
+        Conditions:
+          - Field: host-header
+            Values:
+              - $AWS_HOST_HEADER
+        ListenerArn: $AWS_LOADBALANCER_LISTENER_ARN
+        Priority: 3000

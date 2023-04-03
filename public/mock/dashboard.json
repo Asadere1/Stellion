@@ -1,0 +1,29 @@
+{
+  "MMR": {
+    "total": 8000,
+    "currency": "USD"
+  },
+  "Sales": {
+    "total": 14000,
+    "currency": "USD"
+  },
+  "DailySales": {
+    "total": 800,
+    "currency": "USD"
+  },
+  "Customers": {
+    "total": 400
+  },
+  "Orders": {
+    "total": 800
+  },
+  "DailyOrders": {
+    "total": 100
+  },
+  "CheckingOut": {
+    "total": 10
+  },
+  "Purchased": {
+    "total": 8
+  }
+}

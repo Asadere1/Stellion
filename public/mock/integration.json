@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Some Integration",
+    "status": 1,
+    "type": 1
+  },
+  {
+    "id": 2,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Wacky Integration",
+    "status": 2,
+    "type": 3
+  }
+]

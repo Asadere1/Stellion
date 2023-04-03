@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "created": 123456,
+    "lastModified": 654321,
+    "active": true,
+    "name": "Lego Star'War edition",
+    "status": 2,
+    "type": 1,
+    "template": 1,
+    "title": "",
+    "subtitle": "",
+    "descriptions": "",
+    "preSelect": 1
+  },
+  {
+    "id": 2,
+    "created": 123456,
+    "lastModified": 654321,
+    "active": true,
+    "name": "Gopro hero 7 (with receipt)",
+    "status": 1,
+    "type": 2,
+    "template": 1,
+    "title": "",
+    "subtitle": "",
+    "descriptions": "",
+    "preSelect": 1
+  },
+  {
+    "id": 3,
+    "created": 123456,
+    "lastModified": 654321,
+    "active": true,
+    "name": "Heimer Miller Sofa (Mint Condition)",
+    "status": 3,
+    "type": 3,
+    "template": 1,
+    "title": "",
+    "subtitle": "",
+    "descriptions": "",
+    "preSelect": 1
+  },
+  {
+    "id": 4,
+    "created": 123456,
+    "lastModified": 654321,
+    "active": true,
+    "name": "Coach Tabby 26 for sale",
+    "status": 3,
+    "type": 2,
+    "template": 1,
+    "title": "",
+    "subtitle": "",
+    "descriptions": "",
+    "preSelect": 1
+  },
+  {
+    "id": 5,
+    "created": 123456,
+    "lastModified": 654321,
+    "active": true,
+    "name": "Playstation 4 Limited Edition (with games)",
+    "status": 1,
+    "type": 1,
+    "template": 1,
+    "title": "",
+    "subtitle": "",
+    "descriptions": "",
+    "preSelect": 1
+  }
+]

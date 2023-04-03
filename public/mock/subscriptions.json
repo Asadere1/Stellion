@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Hiconic Rewards™",
+    "rebillPeriod": 0,
+    "trialPeriod": 0,
+    "termsLink": "",
+    "shopifyProduct": 0,
+    "text": "",
+    "subtext": "",
+    "price": 0
+  },
+  {
+    "id": 2,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Hiconic Rewards™",
+    "rebillPeriod": 0,
+    "trialPeriod": 0,
+    "termsLink": "",
+    "shopifyProduct": 0,
+    "text": "",
+    "subtext": "",
+    "price": 0
+  },
+  {
+    "id": 3,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Hiconic Rewards™",
+    "rebillPeriod": 0,
+    "trialPeriod": 0,
+    "termsLink": "",
+    "shopifyProduct": 0,
+    "text": "",
+    "subtext": "",
+    "price": 0
+  },
+  {
+    "id": 4,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Hiconic Rewards™",
+    "rebillPeriod": 0,
+    "trialPeriod": 0,
+    "termsLink": "",
+    "shopifyProduct": 0,
+    "text": "",
+    "subtext": "",
+    "price": 0
+  },
+  {
+    "id": 5,
+    "created": 123456,
+    "lastModified": 654321,
+    "name": "Hiconic Rewards™",
+    "rebillPeriod": 0,
+    "trialPeriod": 0,
+    "termsLink": "",
+    "shopifyProduct": 0,
+    "text": "",
+    "subtext": "",
+    "price": 0
+  }
+]

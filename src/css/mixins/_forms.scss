@@ -1,0 +1,107 @@
+@mixin form-grid($colgap: 2.5rem, $rowgap: 2.5rem, $columns: 1fr 3.75fr) {
+  display: grid;
+
+  grid-template-rows: 1fr;
+  row-gap: $rowgap;
+
+  align-items: center;
+
+  .form-input {
+    display: grid;
+    column-gap: $colgap;
+
+    align-items: center;
+
+    grid-template-columns: $columns;
+
+    margin-bottom: 0;
+
+    label:first-child {
+      @include font(15px, 18px, bold);
+    }
+
+    label .q-icon {
+      margin-left: 10px;
+    }
+
+    .q-field {
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin form-stacked($margin: 40px) {
+  .form-input {
+    margin-bottom: $margin;
+  }
+}
+
+@mixin form-inputs($input-height: 40px, $font-size: 15px, $padding: 20px) {
+
+  .q-input,
+  .q-select,
+  .q-field__control,
+  .q-field__append {
+    height: $input-height;
+    min-height: $input-height;
+  }
+
+  .q-field--auto-height .q-field__control {
+    min-height: $input-height;
+  }
+
+  .q-select .q-field__native,
+  .q-select .q-field__input:not([type="search"]),
+  .q-field__inner {
+    min-height: $input-height;
+  }
+
+  .q-select .q-field__input[type="search"],
+  .q-select .q-field__native > span {
+    min-height: calc(#{$input-height} - 6 * 2px);
+    line-height: calc(#{$input-height} - 6 * 2px);
+  }
+
+  input, .q-select {
+    @include font($font-size);
+    box-sizing: border-box;
+  }
+
+  .q-field--outlined .q-field__control {
+    padding: 0 $padding;
+  }
+
+  .q-select.simple-placeholders {
+    .q-field__label {
+      min-height: #{$input-height};
+      line-height: #{$input-height};
+    }
+  }
+}
+
+@mixin form-labels($font-size: 15px, $top: 25%){
+  .q-field__label {
+    @include font($font-size);
+    top: $top;
+  }
+
+  .q-field__control-container {
+    padding: 0;
+    height: 100%;
+  }
+
+  input {
+    padding-top: $font-size + 5px;
+  }
+}
+
+/* .q-select__dialog {
+  @include mobile {
+    .q-item {
+      padding: 0 8px;
+    }
+  }
+  .q-field__marginal {
+    font-size: 1rem !important;
+  }
+} */

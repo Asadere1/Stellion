@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import 'mixins';
+@import 'structure';
+@import './antd.scss';
+
+// LINKS
+a {
+  color: $info;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+// ROUNDINGS
+.rounded-1 {
+  border-radius: 1rem !important;
+}
+.rounded-half {
+  border-radius: 0.65rem !important;
+}
+
+// BORDERS
+$shadeCount: 7;
+
+.border-dark {
+  border: 1px solid $dark;
+}
+.border-white {
+  border: 2px solid white;
+}
+
+$shades: (
+  1: $dark-1,
+  2: $dark-2,
+  3: $dark-3,
+  4: $dark-4,
+  5: $dark-5,
+  6: $dark-6,
+  7: $dark-7,
+);
+
+.border-l-secondary {
+  border-left: 1px solid $secondary;
+}
+.border-r-secondary {
+  border-right: 1px solid $secondary;
+}
+.border-t-secondary {
+  border-top: 1px solid $secondary;
+}
+.border-l-secondary-light {
+  border-left: 1px solid $secondary-light;
+}
+
+.border-r-secondary-light {
+  border-right: 1px solid $secondary-light;
+}
+
+.border-t-secondary-light {
+  border-top: 1px solid $secondary-light;
+}
+
+@for $i from 1 through $shadeCount {
+  .border-dark-#{$i} {
+    border: 1px solid map-get($shades, $i);
+  }
+  .border-l-dark-#{$i} {
+    border-left: 1px solid map-get($shades, $i);
+  }
+  .border-r-dark-#{$i} {
+    border-right: 1px solid map-get($shades, $i);
+  }
+  .border-b-dark-#{$i} {
+    border-bottom: 1px solid map-get($shades, $i);
+  }
+  .border-t-dark-#{$i} {
+    border-top: 1px solid map-get($shades, $i);
+  }
+}
+
+// GAPS
+.gap-sm {
+  gap: 1.33rem;
+}
+.gap-md {
+  gap: 1.66rem;
+}
+.gap-lg {
+  gap: 2rem;
+}
+.gap-xl {
+  gap: 2.33rem;
+}
+
+// LISTS
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+// FLEX
+.inline-flex {
+  display: inline-flex;
+}
+
+// TRANSITIONS
+.transition-all {
+  transition: all 0.3s;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}

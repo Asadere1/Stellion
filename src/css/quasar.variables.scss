@@ -1,0 +1,236 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$breakpoint-xs: 743px !default;
+//$breakpoint-sm: 1279px !default;
+$breakpoint-sm: 1439px !default;
+$breakpoint-md: 1439px !default;
+$breakpoint-lg: 1919px !default;
+
+/*
+   Since there's only mobile, tablet and desktop designs, and it is just a test, I pushed
+   Middle ground to the same spot as tablet to prevent broken screens
+*/
+
+$body-font-size   : 1rem !default;
+
+$sizes: ('xs': 0, 'sm': ($breakpoint-xs + 1), 'md': ($breakpoint-sm + 1), 'lg': ($breakpoint-md + 1), 'xl': ($breakpoint-lg + 1)) !default;
+
+$breakpoint-xs-min: 0 !default;
+$breakpoint-xs-max: $breakpoint-xs !default;
+
+$breakpoint-sm-min: map-get($sizes, "sm") !default;
+$breakpoint-sm-max: $breakpoint-sm !default;
+
+$breakpoint-md-min: map-get($sizes, "md") !default;
+$breakpoint-md-max: $breakpoint-md !default;
+
+$breakpoint-lg-min: map-get($sizes, "lg") !default;
+$breakpoint-lg-max: $breakpoint-lg !default;
+
+$breakpoint-xl-min: map-get($sizes, "xl") !default;
+$breakpoint-xl-max: 9999px !default;
+
+/*  */
+
+$primary-checkout     : #000034;
+$secondary-checkout   : #4B4E68;
+
+$grey-dark-checkout   : #84849A;
+
+/*  */
+
+$primary: #7782f1;
+$primary-light: #e4e4ff;
+.text-primary-light {
+  color: $primary-light !important;
+}
+.bg-primary-light {
+  background: $primary-light !important;
+}
+$primary-gradient: linear-gradient(
+  90deg,
+  rgba(78, 253, 234, 1) 0%,
+  rgba(117, 129, 255, 1) 100%
+);
+.bg-primary-gradient {
+  background: $primary-gradient;
+}
+
+$secondary: #4efdea;
+$secondary-light: #d7fffb;
+.text-secondary-light {
+  color: $secondary-light !important;
+}
+.bg-secondary-light {
+  background: $secondary-light !important;
+}
+
+$accent: #006bf1;
+$accent-light: #eff6fe;
+.text-accent-light {
+  color: $accent-light !important;
+}
+.bg-accent-light {
+  background: $accent-light !important;
+}
+
+$dark: #000034;
+$dark-7: #25254a;
+.text-dark-7 {
+  color: $dark-7 !important;
+}
+.bg-dark-7 {
+  background: $dark-7 !important;
+}
+
+$dark-6: #4b4e68;
+.text-dark-6 {
+  color: $dark-6 !important;
+}
+.bg-dark-6 {
+  background: $dark-6 !important;
+}
+
+$dark-5: #84849a;
+.text-dark-5 {
+  color: $dark-5 !important;
+}
+.bg-dark-5 {
+  background: $dark-5 !important;
+}
+$dark-4: #979ab8;
+.text-dark-4 {
+  color: $dark-4 !important;
+}
+.bg-dark-4 {
+  background: $dark-4 !important;
+}
+$dark-3: #84849A;
+.text-dark-3 {
+  color: $dark-3 !important;
+}
+.bg-dark-3 {
+  background: $dark-3 !important;
+}
+$dark-2: #4B4E68;
+.text-dark-2 {
+  color: $dark-2 !important;
+}
+.bg-dark-2 {
+  background: $dark-2 !important;
+}
+$dark-1: #000034;
+.text-dark-1 {
+  color: $dark-1 !important;
+}
+.bg-dark-1 {
+  background: $dark-1 !important;
+}
+
+$positive: #17bd8d;
+$positive-light: #e9fbf6;
+.text-positive-light {
+  color: $positive-light !important;
+}
+.bg-positive-light {
+  background: $positive-light !important;
+}
+
+$negative: #f53d6b;
+$negative-light: #ffedec;
+.text-negative-light {
+  color: $negative-light !important;
+}
+.bg-negative-light {
+  background: $negative-light !important;
+}
+
+$info: #219fff;
+$info-light: #e9f6ff;
+.text-info-light {
+  color: $info-light !important;
+}
+.bg-info-light {
+  background: $info-light !important;
+}
+
+$warning: #ff6b00;
+$warning-light: #fff7eb;
+.text-warning-light {
+  color: $warning-light !important;
+}
+.bg-warning-light {
+  background: $warning-light !important;
+}
+
+$purple: #a5a6f6;
+.text-purple {
+  color: $purple !important;
+}
+.bg-purple {
+  background: $purple !important;
+}
+
+$purple-light: #faf0ff;
+.text-purple-light {
+  color: $purple-light !important;
+}
+
+$pink: #f178b6;
+.text-pink {
+  color: $pink !important;
+}
+.bg-pink {
+  background: $pink !important;
+}
+
+.bg-purple-light {
+  background: $purple-light !important;
+}
+
+.bg-primary-to-white {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(235, 236, 245, 0.01) 0%,
+    rgba(255, 255, 255, 0.747274) 41.29%,
+    rgba(119, 130, 241, 0.5) 72.62%,
+    #7782f1 100%
+  );
+}
+.bg-secondary-to-white {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(238, 245, 245, 0.01) 0%,
+    rgba(255, 255, 255, 0.747274) 41.29%,
+    rgba(78, 253, 234, 0.5) 72.62%,
+    #4efdea 100%
+  );
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.woff);
+}
+
+$typography-font-family: 'Poppins', sans-serif !default;
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url(./fonts/Poppins-Bold.woff);
+}
+
+.text-weight-bold {
+  font-family: 'Poppins-bold', sans-serif;
+}

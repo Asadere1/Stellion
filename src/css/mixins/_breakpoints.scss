@@ -1,0 +1,106 @@
+@import '../quasar.variables';
+
+@mixin extra-extra-small {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin extra-small {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-xs-max + 0.5px}) {
+      @content;
+    }
+}
+
+@mixin tablet-small-down {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet-small {
+    @media (min-width: #{$breakpoint-sm-min}) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-sm-min}) and (max-width: #{$breakpoint-sm-max + 0.5px}) {
+        @content;
+    }
+}
+
+@mixin tablet-down {
+    @media (max-width: #{$breakpoint-sm-max + 0.5px}) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (min-width: #{$breakpoint-sm-min}) {
+        @content;
+    }
+}
+
+@mixin desktop-all {
+    @media (min-width: #{$breakpoint-md-min}) {
+        @content;
+    }
+}
+
+@mixin desktop-small-down {
+    @media (max-width: #{$breakpoint-md-max + 0.5px}) {
+        @content;
+    }
+}
+
+@mixin desktop-small {
+    @media (min-width: #{$breakpoint-md-min}) and (max-width: #{$breakpoint-md-max + 0.5px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-lg-min}) and (max-width: #{$breakpoint-lg-max + 0.5px}) {
+        @content;
+    }
+}
+
+@mixin desktop-big {
+    @media (min-width: #{$breakpoint-xl-min}) {
+        @content;
+    }
+}
+
+@mixin container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        max-width: 580px;
+    }
+
+    @include tablet {
+        max-width: 960px;
+    }
+
+    @include desktop-small {
+        max-width: 1140px;
+    }
+
+    @include desktop {
+        //max-width: 1280px;
+        max-width: 1120px;
+    }
+
+    @include desktop-big {
+        //max-width: 1440px;
+        max-width: 1120px;
+    }
+}

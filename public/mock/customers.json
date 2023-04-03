@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "created": 123456,
+    "lastModified": 654321,
+    "firstname": "Tom",
+    "lastname": "Jones",
+    "email": "tom@jones.com",
+    "phone": "+44 777 678 678",
+    "address1": "32 Some Street",
+    "address2": "Park Lane",
+    "city": "London",
+    "state": "SW1",
+    "zip": "23223"
+  },
+  {
+    "id": 2,
+    "created": 123456,
+    "lastModified": 654321,
+    "firstname": "Bill",
+    "lastname": "Gates",
+    "email": "bill@microsoft.com",
+    "phone": "+1 234 567 889",
+    "address1": "32 Other Street",
+    "address2": "Spring Lane",
+    "city": "London",
+    "state": "SW1",
+    "zip": "33434"
+  },
+  {
+    "id": 3,
+    "created": 123456,
+    "lastModified": 654321,
+    "firstname": "Bob",
+    "lastname": "Hope",
+    "email": "bob@hope.com",
+    "phone": "+34 77 889 7765",
+    "address1": "44 India Street",
+    "address2": "Storm Lane",
+    "city": "Essex",
+    "state": "EX2",
+    "zip": "23223"
+  },
+  {
+    "id": 4,
+    "created": 123456,
+    "lastModified": 654321,
+    "firstname": "Eric",
+    "lastname": "Clapton",
+    "email": "eric@clapton.com",
+    "phone": "+44 776 778 778",
+    "address1": "43 Suffolk Road",
+    "address2": "The Bushes",
+    "city": "Manchester",
+    "state": "Manques",
+    "zip": "MA12 4RF"
+  },
+  {
+    "id": 5,
+    "created": 123456,
+    "lastModified": 654321,
+    "firstname": "Neil",
+    "lastname": "Young",
+    "email": "neil.young@music.com",
+    "phone": "0044 766 778 7789",
+    "address1": "45 Almond Road",
+    "address2": "Burnham",
+    "city": "Buckinghamshire",
+    "state": "Berks",
+    "zip": "BR45 5TH"
+  }
+]

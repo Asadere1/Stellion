@@ -1,0 +1,15 @@
+@mixin font( $size: 1rem, $line_height: 1.5, $weight: normal, $force: false ) {
+
+    @if $size != "" {
+        font-size: $size if-important($force);
+    }
+
+    @if $line_height != "" {
+        line-height: $line_height if-important($force);
+    }
+
+    @if $weight != "" {
+        font-weight: $weight if-important($force);
+    }
+
+}
